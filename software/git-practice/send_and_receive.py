@@ -13,14 +13,15 @@ def sender(chanel: str):
     _lcm = lcm.LCM()
 
     # Sample
-    message.name = "Mathieu Tuli"
-    message.value = "TEST VALUE"
-    _lcm.publish(chanel, message.encode())
+#    message.name = "Mathieu Tuli"
+#    message.value = "TEST VALUE"
+#    _lcm.publish(chanel, message.encode())
     # End of sample
 
-    # ADD CODE HERE
-    ################
-
+    message.name = "Arnav Jain"
+    message.value = "TEST VALUE"
+    _lcm.publish(chanel, message.encode())
+   
 
 def listener(channel, data):
     message = test_message.decode(data)
